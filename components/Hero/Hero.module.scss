@@ -1,0 +1,51 @@
+.hero {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	min-height: 430px;
+	background: #eaf0fb;
+	padding: 20px 0;
+	clip-path: url('#cross');
+}
+
+.heroContent {
+	display: flex;
+	align-items: center;
+	flex: 1;
+	gap: 120px;
+}
+
+.heroInfo {
+	max-width: 520px;
+	margin-bottom: auto;
+	padding-top: 50px;
+}
+
+.title {
+	display: block;
+	font-size: 36px;
+	font-weight: bold;
+	line-height: 140%;
+	padding-bottom: 30px;
+
+	& .red {
+		color: #ec5358;
+	}
+}
+
+.description {
+	display: block;
+	color: #636363;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 160%;
+}
+
+.heroImg {
+	flex: 1;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	min-height: 250px;
+	padding-bottom: 40px;
+}

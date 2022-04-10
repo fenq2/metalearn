@@ -1,0 +1,12 @@
+.catalogContent {
+	display: flex;
+	gap: 16px;
+	flex-wrap: wrap;
+	max-width: 992px;
+	width: 100%;
+	margin: 0 auto;
+	transition: all linear 0.3s;
+	animation-duration: 0.8s;
+	animation-fill-mode: both;
+	animation-name: 'fadeIn';
+}
