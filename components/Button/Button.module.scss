@@ -166,3 +166,68 @@
 		background-color: #f2f7ff;
 	}
 }
+
+.authBtn {
+	font-size: 16px;
+	font-weight: 600;
+	min-height: 50px;
+
+	&::after {
+		width: 500px;
+		height: 500px;
+	}
+
+	&:hover::after {
+		opacity: 1;
+		transform-origin: 250px 250px;
+		transform: scale(1) translate(-50%, -50%);
+	}
+}
+
+.simple {
+	background: none;
+	border: none;
+	color: #3c72f0;
+	font-weight: 600;
+	outline: 0;
+	padding: 0;
+	cursor: pointer;
+	border-bottom: 1px solid transparent;
+	transition: 0.2s;
+
+	&:hover {
+		border-bottom: 1px solid #3c72f0;
+	}
+}
+
+.authSwitch {
+	margin: auto auto 0 auto;
+}
+
+.disabled {
+	cursor: not-allowed;
+	background: rgb(124, 124, 124);
+	border: 0;
+
+	&:hover {
+		color: #fff;
+	}
+
+	&::before,
+	&::after {
+		display: none;
+	}
+}
+
+.closeDialog {
+	position: absolute;
+	opacity: 0.5;
+	right: 0;
+	top: 0;
+	padding: 16px 20px;
+	transition: 0.2s;
+
+	&:hover {
+		opacity: 1;
+	}
+}

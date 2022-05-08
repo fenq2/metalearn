@@ -10,9 +10,19 @@ interface IButtonProps {
 	animate?: string;
 	optionalClass?: string;
 	icon?: ReactElement;
+	disabled?: boolean;
 }
 
-const Button = ({ type, text, onClick, variant, animate, optionalClass, icon }: IButtonProps) => {
+const Button = ({
+	type,
+	disabled,
+	text,
+	onClick,
+	variant,
+	animate,
+	optionalClass,
+	icon,
+}: IButtonProps) => {
 	return (
 		<button
 			onClick={onClick}
@@ -21,7 +31,9 @@ const Button = ({ type, text, onClick, variant, animate, optionalClass, icon }: 
 				[styles[variant]]: styles[variant],
 				[styles[animate]]: styles[animate],
 				[styles[optionalClass]]: styles[optionalClass],
-			})}>
+				[styles.disabled]: disabled,
+			})}
+			disabled={disabled}>
 			<div className={styles.buttonContent}>{icon ? icon : text}</div>
 		</button>
 	);
