@@ -2,7 +2,7 @@ import { CreateUserDto, LoginDto, ResponseCreateUser } from './types';
 import axios from 'axios';
 
 const instance = axios.create({
-	baseURL: 'http://localhost:5000/',
+	baseURL: 'https://damp-tor-56449.herokuapp.com/',
 });
 
 export const UserApi = {
