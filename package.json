@@ -11,6 +11,7 @@
 	"dependencies": {
 		"@editorjs/editorjs": "^2.24.2",
 		"@hookform/resolvers": "^2.8.8",
+		"@reduxjs/toolkit": "^1.8.1",
 		"antd": "^4.19.3",
 		"icomoon-react": "^2.0.19",
 		"next": "12.1.4",
@@ -18,6 +19,7 @@
 		"react": "18.0.0",
 		"react-dom": "18.0.0",
 		"react-hook-form": "^7.30.0",
+		"react-redux": "^8.0.1",
 		"react-spring": "^9.4.4",
 		"react-wow": "^1.0.0",
 		"yup": "^0.32.11"
