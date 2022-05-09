@@ -1,17 +1,17 @@
 import axios from 'axios';
 
-import { CreateUserDto, LoginDto, ResponseCreateUser } from './types';
+import { CreateUserDto, LoginDto, ResponseUser } from './types';
 
 const instance = axios.create({
-  baseURL: 'http://localhost:5000/',
+  baseURL: 'https://damp-tor-56449.herokuapp.com/',
 });
 
 export const UserApi = {
   async register(dto: CreateUserDto) {
-    const { data } = await instance.post<
-      CreateUserDto,
-      { data: ResponseCreateUser }
-    >('/auth/register', dto);
+    const { data } = await instance.post<CreateUserDto, { data: ResponseUser }>(
+      '/auth/register',
+      dto,
+    );
     return data;
   },
 
