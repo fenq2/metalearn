@@ -1,7 +1,7 @@
 import classNames from 'classnames';
 import IcomoonReact from 'icomoon-react';
 import Image from 'next/image';
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 
 import lockSvg from '../../assets/images/svg/https.svg';
 import iconSet from '../../utils/icomoon/selection.json';

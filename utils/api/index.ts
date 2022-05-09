@@ -16,10 +16,10 @@ export const UserApi = {
   },
 
   async login(dto: LoginDto) {
-    const { data } = await instance.post<
-      LoginDto,
-      { data: ResponseCreateUser }
-    >('/auth/login', dto);
+    const { data } = await instance.post<LoginDto, { data: ResponseUser }>(
+      '/auth/login',
+      dto,
+    );
     return data;
   },
 };
